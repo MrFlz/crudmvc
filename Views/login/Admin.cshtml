@@ -1,0 +1,20 @@
+@model IEnumerable<crudmvc.Models.Users>
+
+<form class="text-center">
+    <h1>LISTA DE USUARIOS - ADMINISTRADOR</h1>
+    <div>
+        <button type="submit">ADD USER</button> 
+    </div>
+    <div>
+        <table class="tableuslist" style="">
+            <tr>
+                <th>NICKNAME</th>
+                <th>ROLENAME</th>
+                <th>OPTION</th>
+            </tr>
+            <tr>
+                @foreach(var c in model)
+            </tr>
+        </table>
+    </div>
+</form> 
